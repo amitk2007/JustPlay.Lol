@@ -22,8 +22,11 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        // Reset main Variables
         Time.timeScale = 1;
         TotalPoints = 0;
+
+        // Set scripts to the objects in the scene
         SetFloatingCollectables(nameof(CollectablesTags.Coin), nameof(CollectablesTags.Crystal));
         SetSpheres();
     }
@@ -52,6 +55,8 @@ public class GameManager : MonoBehaviour
             collectable.AddComponent<SphereScript>();
         }
     }
+
+    //Using the tag to enum and enum to number to add point automaticaly
     public static void AddPoints(string tagName)
     {
         CollectablesTags tag = (CollectablesTags)System.Enum.Parse(typeof(CollectablesTags), tagName);

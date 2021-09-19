@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class FinishScript : MonoBehaviour
 {
+    /// <summary>
+    /// The Parent Object of all the the end game UI elements
+    /// </summary>
     public GameObject finishImage;
 
     private void OnCollisionEnter(Collision collision)

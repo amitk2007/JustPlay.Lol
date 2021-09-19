@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// object floating animation
+/// </summary>
 public class CollectablesScript : MonoBehaviour
 {
     public float amplitude = 0.1f; //how much the coin goes up and down
